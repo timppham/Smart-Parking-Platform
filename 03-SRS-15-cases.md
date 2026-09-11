@@ -17,8 +17,15 @@ Actors: Car drivers, parking operators, system administrators, the payment provi
 Environment: Web application and native mobile application (iOS and Android).
 Constraints: Needs to interface with a third-party payment processing tool and a map/navigation API. Needs to be compliant with the city's parking guidelines and the PCI-DSS standards for payment transactions. Delivery must fit within the semester time-frame.
 Assumptions: The actors have internet connection either via WiFi or mobile data. The garages will provide an occupation feed to the platform using a sensor, camera, or manual input from the operator.
-
-3. User Case
+3. Functional and Nonfunctional Requirement
+Functional 
+- The system shall let drivers to register and login securely
+- The system shall let drivers to reset their passwords
+- The system shall let drivers search for parking based on their destination
+Non-Functional
+- The system shall provide every instructions to get to the parking space ( turn-by-turn navigation)
+- The system shall let operators set and adjust pricing 
+4. User Case
 UC-01: Registration of User Account
 Actor: Driver
 Preconditions: User has a valid email address
