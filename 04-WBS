@@ -1,0 +1,58 @@
+Work Breakdown Structure — Smart Parking Platform
+
+1. Driver Application (Frontend)
+
+1.1 Authentication & Account
+1.1.1 Registration (UC-01)
+1.1.2 Login (UC-02)
+1.1.3 Password Reset (UC-03)
+1.2 Parking Search & Discovery
+1.2.1 Search for Parking (UC-04)
+1.2.2 Live Availability Map (UC-05)
+1.2.3 Navigation Handoff (UC-11)
+1.3 Reservation & Payment
+1.3.1 Reserve Parking Spot (UC-06)
+1.3.2 Cancel Reservation (UC-07)
+1.3.3 Payment Processing (UC-08)
+1.3.4 Reservation History & Receipts (UC-09)
+1.4 Notifications
+1.4.1 Push & Email Alerts (UC-10)
+
+2. Backend / API
+
+2.1 Authentication Service
+2.1.1 Session management
+2.1.2 Password reset logic
+2.2 Reservation Engine
+2.2.1 Availability check logic
+2.2.2 Booking/hold logic
+2.3 Payment Integration
+2.3.1 Payment gateway API integration
+2.3.2 Refund processing (UC-16)
+2.4 Notification Service
+2.4.1 Push dispatch
+2.4.2 Email dispatch
+
+3. Operator Dashboard
+
+3.1 Facility Management
+3.1.1 Manage Facility Listing (UC-15)
+3.1.2 Manage Parking Rates (UC-12)
+3.2 Occupancy Monitoring
+3.2.1 Real-Time Occupancy View (UC-13)
+3.2.2 Occupancy Reports & Analytics (UC-14)
+3.3 Admin Tools
+3.3.1 Account management
+3.3.2 Refund initiation (UC-16)
+
+4. Mapping & Location Services
+
+4.1 Third-party map API integration
+4.2 Turn-by-turn navigation handoff
+4.3 Geolocation for nearby search
+
+5. QA & Testing
+
+5.1 Unit testing
+5.2 Integration testing
+5.3 User acceptance testing
