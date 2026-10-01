@@ -1,0 +1,38 @@
+1. Risks by Category
+Technical
+- Parking occupancy sensor/camera API from garage partners proves unreliable or inconsistent
+- Third-party payment gateway integration has downtime or breaking API changes
+- Mapping/navigation service rate limits or deprecates the API being used
+- Real-time data sync between driver app and operator dashboard lags or desyncs
+
+Schedule
+- Backend authentication takes longer than planned, delaying frontend work that depends on it
+- Payment and mapping integrations slip because third-party partner approval/sandbox access is delayed
+- QA testing phase gets compressed if earlier development phases run over
+- Operator dashboard features depend on reporting requirements that are still being refined
+
+Financial
+- Payment gateway transaction fees run higher than budgeted at scale
+- Third-party API costs (mapping, sensor data) scale up unexpectedly with usage
+- City contract milestone payments are delayed, affecting cash flow for the project
+- Scope creep from the city client adding features mid-contract without budget adjustment
+
+People
+- A developer on a critical path (e.g., backend/auth) leaves or becomes unavailable
+- Miscommunication between the Mobile and Backend/API teams causes integration rework
+- Inexperience of a team member regarding payments/PCI-DSS compliance leads to delays
+- Lack of responses from operator-side stakeholders prevents dashboards approval
+
+2. Risk Register
+View the 2 images under risk_prob and risk_register
+
+3. Communication Plan
+Meeting Cadence
+- Daily Stand-up — Daily (per team). Short status sync per team (Mobile, Web, Backend/API, Mapping, Payment, QA): what I did, what I'll do, blockers.
+- Cross-Team Progress Meeting — Weekly. Deeper check-in across all six teams; surfaces integration risks early.
+- Sprint / Stakeholder Meeting — Monthly. Demo working increments to the city client; big-picture progress against the project timeline.
+
+Reporting Methods
+- Executives / City Stakeholders — Dashboard + monthly demo. High-level milestone status, budget burn, key risk flags (no technical detail).
+- Developers / Teams — Jira backlog & sprint board. Detailed tasks, sprint progress, blockers.
+- Risk Tracking — Risk Register review. Reviewed and updated at each weekly cross-team meeting; new Critical/High risks escalated immediately.
