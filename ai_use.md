@@ -6,7 +6,7 @@ Researching existing competitor products for the competitive analysis section
 Drafting an initial structure and content for the Vision and Scope section 
 Drafting an initial case structure
 Tutorial over how to use Jira
-
+learning how to spread costs across months for the resource plan
 3. Prompts used (representative):
 
 "Help me find the competitor products that are used for parking" (competitive analysis)
@@ -14,6 +14,7 @@ Tutorial over how to use Jira
 "help me draft the vision and scope section based on the research we did for the competitors"
 "help me to use Jira, on how to create scrums and epics, and then sprint"
 "how to calculate risk level"
+"how to spread out the cost for resource plan"
 
 4. What I kept vs. what I changed:
 
