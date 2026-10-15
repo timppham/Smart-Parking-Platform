@@ -4,7 +4,7 @@ An unlimited budget can be set for the project brief. The total cost of this app
 
 # 6.1 Roles and Resources
 
-Assumption: The duration for the project is 14 weeks (September 1 to December 8, 2026), assuming a working week of 40 hours, one person equals 560 hours. Skills include Junior (0 to 2 years), Mid (3 to 6 years), and Senior (7+ years). The names are placeholders.
+Assumption: The duration for the project is 14 weeks (September 1 to December 8, 2026), assuming a working week of 40 hours, one person equals 560 hours. Skills include Junior (0 to 2 years), Mid (3 to 6 years), and Senior (7+ years). The names are placeholders. Allocations are averaged across all 14 weeks. The Gantt chart shows when each person’s work peaks.
 # Team
 - Product Owner: Anthony Black. Senior, 25% allocation, 140 hours at $70 per hour = $9,800
 - Project Manager: Tim Duncan. Senior, 50% allocation, 280 hours at $60 per hour = $16,800
@@ -24,7 +24,7 @@ Total: 4,816 hours, $322,700
 
 # Role Definitions
 - Product Owner: Prioritizes the backlog and verifies that features are complete. Operators come first.
-- Project Manager: Builds the schedule and manages risks. Reports to the city stakeholders.
+- Project Manager: Builds the schedule and manages risks. Reports to the city stakeholders.Also acts as Scrum Master (sprint planning, stand-ups, reviews, retrospectives).
 - Solutions Architect: Responsible for the architecture of the system.
 - UX Designer: Responsible for designing the driver and operator application screens.
 - Backend/API Developer: Implements the back-end services, databases, and related APIs used by the applications.
@@ -51,7 +51,7 @@ Contingency: 15% of the subtotal = $63,696
 
 Total cost: $488,336
 
-Contingency is 15%. Contingency typically ranges between 5% and 20%, and our risk register has three High risks (R-01, R-05, R-06), all associated with external factors or schedule.
+Contingency is 15%. Contingency typically ranges between 5% and 20%, and our risk register has four High risks (R-01, R-05, R-06, R-12), all associated with external factors or schedule.
 # 6.3 Monthly Cashflow
 
 Months are 4-week project months, not calendar months. Month 4 is the last two weeks.
@@ -183,3 +183,13 @@ R = Responsible, A = Accountable, C = Consulted, I = Informed. One person is acc
 - Accountable and Responsible: DevOps
 - Consulted: Project Manager, Solutions Architect, Backend/API, QA
 - Informed: Product Owner, UX Designer, Web App, Mobile App, Mapping & Location, Payment Integration
+
+# Sprint planning and backlog upkeep
+- Accountable: Product Owner
+- Responsible: Project Manager
+- Consulted: Solutions Architect, UX Designer, Backend/API, Web App, Mobile App, Mapping & Location, Payment Integration, QA
+- Informed: DevOps
+# Cloud environments and CI/CD setup
+- Accountable and Responsible: DevOps
+- Consulted: Solutions Architect, Backend/API, QA
+- Informed: Project Manager, Product Owner, UX Designer, Web App, Mobile App, Mapping & Location, Payment Integration

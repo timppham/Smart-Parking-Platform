@@ -1,7 +1,7 @@
 Software Requirements Specification (SRS)
 Project: Smart Parking Platform
-Version: 0.1 (Draft)
-Date: 09.10.2026
+Version: 0.6 
+Date: 10.15.2026
 
 1. Introduction
 
@@ -22,6 +22,8 @@ Functional
 - The system shall let drivers to register and login securely
 - The system shall let drivers to reset their passwords
 - The system shall let drivers search for parking based on their destination
+- The system shall allow a System Administrator to suspend, restore and edit user accounts.
+- The system shall allow a Parking Operator to enter occupancy counts manually when the live occupancy feed is unavailable, and shall mark those counts as manual on the dashboard and to drivers
 Non-Functional
 - The system shall provide every instructions to get to the parking space ( turn-by-turn navigation)
 - The system shall let operators set and adjust pricing 
@@ -121,3 +123,14 @@ Actor: System Administrator, Payment Provider
 Preconditions: There is a disputed or cancelled reservation
 Steps: Admin views the reservation and clicks "Issue Refund". The request is then sent to the payment provider. After the payment provider confirms, the driver gets his refund.
 Postconditions: Driver is issued the refund; status of reservation is updated.
+
+UC-17: Manage User Accounts
+ Actor: System Administrator 
+ Preconditions: Admin is signed in 
+ Steps: Admin locates a user either through their email or name and opens their account. Admin makes changes to the account, suspending or restoring an account where necessary. System acknowledges the change and logs who made it.
+ Postconditions: The account shows its new status. A suspended user cannot sign in until restored.
+
+UC-18: Enter Occupancy Manually 
+Actor: Parking Operator 
+Preconditions: Operator is signed in and the live occupancy feed for the facility is down Steps: Operator opens the occupancy screen and sees a feed-down notice. Operator enters the current occupied count for the facility or a zone. System saves the count and labels it as manual. 
+Postconditions: Drivers and the dashboard see the manual count until the live feed returns.
