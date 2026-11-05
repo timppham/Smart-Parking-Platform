@@ -1,0 +1,105 @@
+# Project Closure Report (Draft)
+
+INTERNAL: Software Corp use only. Not for distribution to the city.
+
+Project: Smart Parking Platform
+Prepared by: Tim Duncan, Project Manager
+Version: 0.8 (draft)
+Planned go-live: December 8, 2026
+
+# 1. Executive Summary
+
+Smart Parking Platform is a cloud-based parking solution for the city. A driver application (Mobile and Web) and an operator dashboard using a single backend system to provide real time occupancy data. The project will run from September 1st to December 8th 2026. It has 13 members and has an approved budget of $488,336, which includes a 15% contingency of $63,696.
+
+Planning has been completed consistently. The requirements have been defined with 18 use cases, a WBS covering all required elements, a Gantt chart detailing dependencies and six milestones. A risk register with 12 risks has been created along with a communication and costing plan. Sprints 1 and 2 have been created in Jira. Final schedule and cost performance will be added at closure.
+
+The 4 High risks remain open and are the biggest factors affecting the project outcome. These include: Occupancy Sensor API (R-01), Payment Sandbox Access (R-05), Compressed QA Window (R-06) and Late discovery of PCI-DSS issues (R-12).
+
+# 2. Objectives and Deliverables
+
+Objectives from the Vision and Scope
+- Drivers can find, reserve, and pay for parking from one app
+- Operators manage facilities, rates, and live occupancy from one dashboard
+- Both sides see the same live data
+- Go live on December 8, 2026, within $488,336
+
+Deliverables
+- Driver app, mobile and web (account, search, live availability, reserve, cancel, pay, history and receipts, notifications, navigation)
+- Operator dashboard (facility listing, rates, live occupancy, reports, manual occupancy entry)
+- Admin functions (account management, refunds)
+- Backend and API, mapping, payment integration, testing, deployment
+- Project documents: SRS, WBS, Gantt chart, risk register, communication plan, resource and cost plan, stakeholder analysis, team charter, project charter
+
+# 3. Achievements and Shortfalls
+
+Achievements:
+- Requirements have been completed. We have a SRS document (version 0.6) containing 18 use cases (UC-01 to UC-18), plus FR16 and FR17.
+- The Work Breakdown Structure is complete. It outlines all use cases, UX, DevOps and project management.
+- The Gantt chart is complete. There are 13 tasks with finish-to-start and start-to-start relationships. Resources are named. There are 6 milestones (Sep 22, Oct 6, Oct 20, Nov 3, Nov 24, Dec 8).
+- The risk register is complete. There are 12 risks, each with their owner, mitigation strategy and risk level taken from the matrix.
+- The budget has been worked out. We have labour costs of $322,700, overhead $80,675, plus other costs of $21,265, subtotal $424,640 and contingency $63,696, total $488,336.
+- Stakeholder analysis has been carried out. We have a Power Interest grid, team charter and project charter.
+- The Jira board has a backlog of approximately 62 items. We have 2 sprints (Sprint 1 & 2) with documented objectives. A retrospective has been created (Start/Stop/Continue).
+- A communication plan has been created. This has been tailored to our audience. We have monthly demos for the city, sprint boards for developers and weekly risk review.
+
+Shortfalls
+- The first version of the plan had gaps that only showed up in the update pass. The cost plan included DevOps work that was not on the schedule, the resource plan included a UX designer but the WBS had no UX tasks, two use cases were missing, and the risk register had no risk levels
+- Our own planning documents drifted apart. The cost plan, the Gantt chart, and the RACI were each right on their own and wrong together until we checked them against each other
+- The first Gantt file had its dependencies reversed, which pushed tasks into 2027 until it was caught
+- The PCI-DSS legal review is still planned for Month 3, after the payment integration is built. We added a design review in Sprint 2 to reduce the exposure, but the full review still comes late (R-12)
+- All four High risks are open. None has been closed or fully mitigated yet
+- Items still to confirm at closure: final SPI and CPI, actual spend against $488,336, how much contingency was used, and whether every sprint goal was met
+
+# 4. Final Schedule and Budget Comparison
+
+Schedule
+- Planned: September 1 to December 8, 2026, with the six milestones above
+- Actual: to be filled in at closure
+
+Budget
+- Planned: $488,336 ($424,640 plus 15% contingency of $63,696)
+- Actual spend and contingency used: to be filled in at closure
+
+# 5. Lessons Learned
+
+Communication
+- Thirteen people means 78 possible communication paths. Keeping most conversation inside a team or a scheduled meeting is what made that workable
+- Different readers need different reports. The city wants milestones, cost, and High risks. Developers want the board and the blockers
+- Most of the gaps we found were between documents, so cross-checking them is part of communication
+
+Testing and quality
+- Test environments and the CI/CD pipeline belong early. We moved them into Sprint 2 after seeing R-11
+- Releases go through staging with automated regression tests and a rollback plan. The Knight Capital case from earlier in the course is the reason
+- QA starts early and has a buffer week before deployment, because the QA phase is the one that gets squeezed when anything upstream runs late (R-06)
+
+Planning and management
+- Dependencies need a direction check. A finish-start link nested in the wrong task moves the whole schedule
+- Risk levels come from the matrix, not from adding probability and impact
+- Early requests for sandbox access and firm feedback deadlines cost nothing and protect the schedule (R-05, R-10)
+- The stakeholder grid put the city, the operators, and the development teams in "manage closely", so they get the most direct reporting
+
+# 6. Recommendations for Future Projects
+
+- Plan compliance and legal reviews before the work they could invalidate, not after. For payments, run the PCI-DSS design review in the first month and the full review before integration starts
+- Request partner and vendor sandbox access on day one, in the contract if possible
+- Put environments, CI/CD, and test data in the first sprint
+- Check the cost plan, the schedule, the RACI, and the backlog against each other at every update, using one checklist
+- Build a manual fallback for any feature that depends on a partner's data, as we did with manual occupancy entry (UC-18)
+- Review the risk register every week and escalate any new High risk the same day
+- Keep a central lessons learned file and add to it at the end of every sprint, not only at closure
+- Hold the final retrospective with the whole team and publish a short version to the city
+
+# 7. Closure Checklist
+
+- Verify all deliverables against the 18 use cases
+- Get written acceptance from the city and the Product Owner
+- Release project resources and close the budget
+- Archive documents, code, and Jira boards in the repo
+- Hold the final retrospective
+- Send the closure report to Software Corp management
+- Thank the team
+
+# 8. Acknowledgments and Sign-off
+
+Thank you to the 13 people on the team, to the Product Owner for clear priorities, and to the city stakeholders for feedback.
+
