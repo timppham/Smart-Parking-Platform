@@ -11,7 +11,7 @@ Planned go-live: December 8, 2026
 
 The Smart Parking Platform is a cloud-based parking system. It involves development of a driver mobile/web application and operator dashboard. It is planned to run between 1st September 2026 and 8 th December 2026. There are 13 people working on this project and it has an approved budget of $488,336 including 15% contingency ($63,696).
 
-Planning is complete. Requirements have been defined with 18 use cases. A Work Breakdown Structure has also been defined, as well as a Gantt Chart with details of dependencies. 6 Milestone points have been created. A Risk Register has been made with 12 risks, alongside a Communications Plan and Cost Plan. Sprint 1 & 2 have been created in Jira. Schedule and cost will be updated once closed.
+Planning is complete. Requirements have been defined with 18 use cases. A Work Breakdown Structure has also been defined, as well as a Gantt Chart with details of dependencies. 6 Milestone points have been created. A Risk Register has been made with 12 risks, alongside a Communications Plan and Cost Plan. Sprint 1 to 5 have been created in Jira. Schedule and cost will be updated once closed.
 
 There are 4 high risks in the project which are having the greatest effect on the project:
 
@@ -50,7 +50,7 @@ Achievements:
 - The risk register is complete. There are 12 risks, each with their owner, mitigation strategy and risk level taken from the matrix.
 - The budget has been worked out. We have labour costs of $322,700, overhead $80,675, plus other costs of $21,265, subtotal $424,640 and contingency $63,696, total $488,336.
 - Stakeholder analysis has been carried out. We have a Power Interest grid, team charter and project charter.
-- The Jira board has a backlog of approximately 62 items. We have 2 sprints (Sprint 1 & 2) with documented objectives. A retrospective has been created (Start/Stop/Continue).
+- The Jira board has a backlog of approximately 62 items. We have 5 sprints with documented objectives. A retrospective has been created (Start/Stop/Continue).
 - A communication plan has been created. This has been tailored to our audience. We have monthly demos for the city, sprint boards for developers and weekly risk review.
 
 Shortfalls
@@ -150,7 +150,7 @@ Not included: New functionality. These will be handled via change control and ch
 Proposed targets, to be agreed with the city:
 
 - Uptime: 99.5% per month, excluding planned maintenance windows
-- Severity 1:  1 Hour response time, 4 Hour resolution/around, 24/7. (Platform unavailable, payments not working, reservations not possible)
+- Severity 1:  1 Hour response time, 4 Hour restore time 24/7. (Platform unavailable, payments not working, reservations not possible)
 - Severity 2: 4 Hour response time, 2 working day resolution. (Major functionality failure with workaround)
 - Severity 3: 1 working day response time, resolved in next monthly release. (Minor defects)
 - Severity 4: Backlog. (Questions or appearance issues)
@@ -182,7 +182,7 @@ For severity 1 and 2 incidents, blameless post-mortems are carried out. The root
 - Monitoring dashboards and alerts are in place for known scenarios. In addition, logging, metrics and tracing is in place to investigate unknown issues.
 - OS, runtimes & dependencies are patched monthly. Critical security patches are done within 72 hours using an emergency process.
 - Dependencies are scanned in every build. Static and dynamic security testing occurs quarterly.
-- Compliance: Review for PCI-DSS once per year and compliance with city ordnances. Findings are recorded for audit.
+- Compliance: Review for PCI-DSS once per year and compliance with city ordinances. Findings are recorded for audit.
 
 8.9 Technical debt
 
